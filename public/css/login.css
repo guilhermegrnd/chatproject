@@ -1,0 +1,77 @@
+html {
+  height:100vh;
+  width:100vw;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  /*height:100vh;
+  width:100vw;*/
+  margin: 0!important;
+  padding: 0!important;
+  background: #7F7FD5;
+  background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+  background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+}
+.form-login {
+  position: fixed;
+  top: 25vh;
+  left: 35%;
+  height:35vh;
+  width: 30vw;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.login-input {
+  margin: 5px;
+  height: 20px;
+  border: none;
+  background: transparent;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 5px;
+  display: flex;
+}
+.login-input:focus {
+}
+.login-div-btn {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.login-btn {
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  height: 30px;
+  border-radius: 21px;
+  background: #7F7FD5;
+  background: linear-gradient(left, #91EAE4, #86A8E7, #7F7FD5);
+  z-index: 1;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.login-btn::before {
+  z-index: -1;
+  border-radius: 21px;
+  background-color: #555555;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.login-btn:hover {
+  background-color: #91EAE4;
+}
+.login-btn:hover:before {
+  opacity: 1;
+}
+#responseLogin {
+
+}
